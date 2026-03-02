@@ -24,7 +24,7 @@ def solve():
             
             # Step 2-1. (0,0)과 (N-1,N-1)이 윈도우 안에 있는지 확인
             if not (lo <= grid[0][0] <= hi and lo <= grid[N-1][N-1] <= hi):
-                continue
+                break
             
             # Step 3. DP로 경로 존재 여부 확인
             def check(lo, hi):
